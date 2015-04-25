@@ -3,6 +3,7 @@ using System.Collections;
 
 public class MouseMove : MonoBehaviour
 {
+	public bool canClimb = false;
     private Rigidbody2D rb_;
     private float mag_ = 15f;
     private float magUp_ = 20f;
@@ -26,5 +27,8 @@ public class MouseMove : MonoBehaviour
             Vector2 force = new Vector2(x * mag_, 0 * magUp_);
             rb_.AddForce(force);
         }
+		if (Input.GetKey(KeyCode.UpArrow) && canClimb) {
+			// move up
+		}
     }
 }

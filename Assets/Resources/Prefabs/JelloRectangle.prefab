@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 444212}
   - 212: {fileID: 21280122}
+  - 114: {fileID: 11410476}
   m_Layer: 0
   m_Name: JelloRectangle
   m_TagString: Untagged
@@ -57,6 +58,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 444212}
   m_RootOrder: 0
+--- !u!114 &11410476
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87fadcacf1dc94e9ea5b256f1c93dada, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wobbleAmpl: .25
+  wobbleSpeed: 10
+  dampingFactor: 2
 --- !u!212 &21280122
 SpriteRenderer:
   m_ObjectHideFlags: 1

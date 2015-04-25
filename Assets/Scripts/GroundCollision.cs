@@ -19,6 +19,11 @@ public class GroundCollision : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        isGrounded = (other.gameObject.tag == "Ground") ? true : false ;
+        isGrounded = true;
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        isGrounded = false;
     }
 }

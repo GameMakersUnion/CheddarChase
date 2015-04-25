@@ -1,15 +1,17 @@
 fileFormatVersion: 2
-guid: 6f3e63548071a471db93cee7db2c59a8
-timeCreated: 1429972103
+guid: 7a7ddbc1ee1424784a8d5030c1a3dd28
+timeCreated: 1429979697
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Counters_0
-    21300002: Counters_1
+    21300000: Books 16x32_0
+    21300002: Books 16x32_1
+    21300004: Books 16x32_2
+    21300006: Books 16x32_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -51,25 +53,45 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Counters_0
+    - name: Books 16x32_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 128
-        height: 128
+        width: 16
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Counters_1
+    - name: Books 16x32_1
       rect:
         serializedVersion: 2
-        x: 128
+        x: 16
         y: 0
-        width: 128
-        height: 128
+        width: 16
+        height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Books 16x32_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Books 16x32_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

@@ -25,9 +25,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 405080}
   - 212: {fileID: 21246682}
-  - 60: {fileID: 6001802}
-  - 60: {fileID: 6003916}
-  - 50: {fileID: 5094760}
+  - 60: {fileID: 6016822}
   m_Layer: 0
   m_Name: Cheese
   m_TagString: Refractive
@@ -42,8 +40,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 193634}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: .230000004, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalPosition: {x: 23.9500008, y: 6.61999989, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 441504}
   m_Father: {fileID: 0}
@@ -55,48 +53,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 142822}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -.153333336, z: 0}
-  m_LocalScale: {x: .666666687, y: .666666687, z: 1}
+  m_LocalPosition: {x: 0, y: -.177000001, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 405080}
   m_RootOrder: 0
---- !u!50 &5094760
-Rigidbody2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 193634}
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: .0500000007
-  m_GravityScale: 1
-  m_FixedAngle: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
---- !u!60 &6001802
-PolygonCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 193634}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  m_Points:
-    m_Paths:
-    - - {x: .0714285746, y: .514285743}
-      - {x: -.0714285746, y: .514285743}
-      - {x: -.528571427, y: -.314285725}
-      - {x: -.600000024, y: -.45714286}
-      - {x: -.600000024, y: -.514285743}
-      - {x: .600000024, y: -.514285743}
-      - {x: .600000024, y: -.428571433}
-      - {x: .5, y: -.242857143}
---- !u!60 &6003916
+--- !u!60 &6016822
 PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -109,14 +71,14 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Points:
     m_Paths:
-    - - {x: .13987875, y: .879353583}
-      - {x: -.0562171936, y: .871748149}
-      - {x: -1.07617378, y: -.694564819}
-      - {x: -1.07154608, y: -.708127022}
-      - {x: -.523943901, y: -.719636321}
-      - {x: .820561886, y: -.727242112}
-      - {x: .80535078, y: -.717583537}
-      - {x: 1.16929102, y: -.706797719}
+    - - {x: .0714285746, y: .514285743}
+      - {x: -.0714285746, y: .514285743}
+      - {x: -.528571427, y: -.314285725}
+      - {x: -.600000024, y: -.45714286}
+      - {x: -.600000024, y: -.514285743}
+      - {x: .600000024, y: -.514285743}
+      - {x: .600000024, y: -.428571433}
+      - {x: .5, y: -.242857143}
 --- !u!212 &21212246
 SpriteRenderer:
   m_ObjectHideFlags: 1

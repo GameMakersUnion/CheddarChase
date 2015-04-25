@@ -3,6 +3,7 @@ using System.Collections;
 
 public class MouseMove : MonoBehaviour
 {
+	public bool canClimb = false;
     private Rigidbody2D rb_;
     private GroundCollision gc_;
     private float mag_ = 15f;
@@ -49,7 +50,13 @@ public class MouseMove : MonoBehaviour
         {
             rb_.velocity += -rb_.velocity/10;
         }
+<<<<<<< HEAD
         Debug.Log("x: " + x + ", y: " + y + ", velocity: " + rb_.velocity);
         
+=======
+		if (Input.GetKey(KeyCode.UpArrow) && canClimb) {
+			// move up
+		}
+>>>>>>> origin/master
     }
 }

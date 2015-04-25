@@ -14,7 +14,7 @@ GameObject:
   - 114: {fileID: 11458932}
   m_Layer: 0
   m_Name: Mouse
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -103,6 +103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b47a47dc77a6cca48bea1eaed0d9e320, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canClimb: 0
 --- !u!212 &21203622
 SpriteRenderer:
   m_ObjectHideFlags: 1

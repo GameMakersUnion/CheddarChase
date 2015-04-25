@@ -4,7 +4,7 @@ using System.Collections;
 public class MouseMove : MonoBehaviour
 {
     private Rigidbody2D rb_;
-    private float mag_ = 25f;
+    private float mag_ = 15f;
     private float magUp_ = 20f;
 
     // Use this for initialization

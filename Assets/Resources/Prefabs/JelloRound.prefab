@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 471528}
   - 212: {fileID: 21220772}
   - 114: {fileID: 11494536}
-  - 60: {fileID: 6047888}
+  - 60: {fileID: 6065054}
   m_Layer: 0
   m_Name: Jello
   m_TagString: Untagged
@@ -68,8 +68,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 138898}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -.569999993, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -.337000012, z: 0}
+  m_LocalScale: {x: .75, y: .75, z: 1}
   m_Children: []
   m_Father: {fileID: 477390}
   m_RootOrder: 0
@@ -80,14 +80,14 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 174940}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.05779457, y: 1.93660831, z: 0}
+  m_LocalPosition: {x: -2.48000002, y: 3.05999994, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 471528}
   - {fileID: 439256}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!60 &6047888
+--- !u!60 &6065054
 PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -100,14 +100,14 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Points:
     m_Paths:
-    - - {x: .441400051, y: 1.54796243}
-      - {x: -.439217329, y: 1.54199338}
-      - {x: -1.08382654, y: 1.11680818}
-      - {x: -1.39460945, y: .582769692}
-      - {x: -1.39080334, y: 2.98023224e-07}
-      - {x: 1.40200806, y: .00739985704}
-      - {x: 1.38720942, y: .580231965}
-      - {x: 1.09260035, y: 1.14862561}
+    - - {x: -.332859695, y: .94206351}
+      - {x: -.736999869, y: .612704456}
+      - {x: -.898085952, y: .34737891}
+      - {x: -.895092368, y: 1.58945724e-07}
+      - {x: .902033985, y: .00351158786}
+      - {x: .897477984, y: .354318798}
+      - {x: .701886058, y: .676613331}
+      - {x: .344788551, y: .945575237}
 --- !u!114 &11494536
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -41,7 +41,7 @@ GameObject:
   - 4: {fileID: 492010}
   - 212: {fileID: 21266084}
   - 114: {fileID: 11413234}
-  - 61: {fileID: 6195426}
+  - 61: {fileID: 6118960}
   m_Layer: 0
   m_Name: Jello
   m_TagString: Untagged
@@ -56,7 +56,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 137324}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -4.20669079, y: 3.20740652, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 492010}
@@ -70,7 +70,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 162582}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -.230000004, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 444212}
@@ -83,11 +83,11 @@ Transform:
   m_GameObject: {fileID: 196656}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -.569999993, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .75, y: .75, z: 1}
   m_Children: []
   m_Father: {fileID: 444212}
   m_RootOrder: 0
---- !u!61 &6195426
+--- !u!61 &6118960
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -97,9 +97,9 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 8b997f31b7e95449b829a6f384617e83, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: .800000012}
+  m_Offset: {x: 0, y: .5}
   serializedVersion: 2
-  m_Size: {x: 3.20000005, y: 1.60000002}
+  m_Size: {x: 2, y: 1}
 --- !u!114 &11413234
 MonoBehaviour:
   m_ObjectHideFlags: 1

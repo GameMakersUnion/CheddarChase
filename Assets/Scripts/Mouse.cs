@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MouseMove : MonoBehaviour
+public class Mouse : MonoBehaviour
 {
+    //movement related
 	public bool canClimb = false;
     private Rigidbody2D rb_;
     private GroundCollision gc_;
@@ -13,6 +14,17 @@ public class MouseMove : MonoBehaviour
     private const float expo = 1.5f;
     private const float maxVel_  = 1f;
 
+
+    //state related
+    private int health_ = 3;
+    public int health {
+        get { return health_; }
+        set { health_ = (value < 0) ? 0 : value; }
+    }
+    private float timeRemains = 1.0f; // 10 seconds.
+    public bool damageShowing = false;
+    private SpriteRenderer sr_;
+    private bool deathOccured = false;
 
     // Use this for initialization
     void Start()
@@ -27,12 +39,59 @@ public class MouseMove : MonoBehaviour
         {
             Debug.LogWarning("<color=maroon>Something wrong! Probably no GroundCollision script found on Ground of Mouse! Make it so!</color>");
         }
-
+        sr_ = this.GetComponent<SpriteRenderer>();
+        if (sr_ == null)
+        {
+            Debug.LogWarning("<color=maroon>Something wrong! How the hecks is the Sprite Renderer missing! WTF</color>");
+        }
     }
 
     // Update is called once per frame
+    void Update()
+    {
+
+        if (health_ <= 0 && !deathOccured)
+        {
+            sr_.color = Color.black;
+            float x = transform.localScale.x , y = transform.localScale.y, z = transform.localScale.z;
+            transform.localScale = new Vector3(x, -y, z);
+            deathOccured = true;
+            return;
+        }
+        else if (health_ <= 0)
+        {
+            return;
+        }
+
+        if (damageShowing)
+        {
+            if (timeRemains > 0)
+            {
+                // Decrease timeLimit.
+                timeRemains -= Time.deltaTime;
+                sr_.color = Color.red;
+
+            }
+            else
+            {
+                timeRemains = 1.0f;
+                sr_.color = Color.white;
+                damageShowing = false;
+
+            }
+
+        }
+    }
+
     void FixedUpdate()
     {
+
+        if (health_ <= 0)
+        {
+            return;
+        }
+
+        //MOVEMENT PHYSICS STUFF
         float x = Input.GetAxis("Horizontal");
         float y = Input.GetAxis("Vertical");
 
@@ -55,12 +114,12 @@ public class MouseMove : MonoBehaviour
         else if (rb_.velocity.y > 0)
         {
             rb_.velocity += -rb_.velocity / 10;
-            Debug.Log("UPSING");
+            //Debug.Log("UPSING");
         }
         //falling
         else if ( rb_.velocity.y < 0)
         {
-            Debug.Log("FALLING");
+            //Debug.Log("FALLING");
             rb_.AddForce(new Vector2(0, -magFall_));
         }
 
@@ -90,4 +149,5 @@ public class MouseMove : MonoBehaviour
 			// move up
 		}
     }
+
 }

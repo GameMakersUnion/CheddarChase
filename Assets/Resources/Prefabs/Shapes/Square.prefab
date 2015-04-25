@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 449934}
   - 212: {fileID: 21273310}
+  - 60: {fileID: 6012602}
   m_Layer: 0
   m_Name: Square
   m_TagString: Untagged
@@ -28,6 +29,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!60 &6012602
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 167870}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: -.5, y: .507142842}
+      - {x: -.5, y: -.507142842}
+      - {x: .5, y: -.507142842}
+      - {x: .5, y: .507142842}
 --- !u!212 &21273310
 SpriteRenderer:
   m_ObjectHideFlags: 1

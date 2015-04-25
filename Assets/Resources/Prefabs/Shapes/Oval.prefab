@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 446510}
   - 212: {fileID: 21250676}
+  - 60: {fileID: 6035382}
   m_Layer: 0
   m_Name: Oval
   m_TagString: Untagged
@@ -28,6 +29,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!60 &6035382
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 160340}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+    m_Paths:
+    - - {x: .435714275, y: .364285707}
+      - {x: -.378571421, y: .364285707}
+      - {x: -.635714293, y: .192857146}
+      - {x: -.635714293, y: -.164285719}
+      - {x: -.378571421, y: -.364285707}
+      - {x: .335714281, y: -.364285707}
+      - {x: .478571415, y: -.307142854}
+      - {x: .635714293, y: -.150000006}
+      - {x: .635714293, y: .20714286}
 --- !u!212 &21250676
 SpriteRenderer:
   m_ObjectHideFlags: 1

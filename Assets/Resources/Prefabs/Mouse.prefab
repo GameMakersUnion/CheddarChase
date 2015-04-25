@@ -237,6 +237,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canClimb: 0
+  damageShowing: 0
 --- !u!124 &12482144
 Behaviour:
   m_ObjectHideFlags: 1

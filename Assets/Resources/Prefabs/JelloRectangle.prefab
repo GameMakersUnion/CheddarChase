@@ -40,8 +40,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 492010}
   - 212: {fileID: 21266084}
-  - 58: {fileID: 5801158}
   - 114: {fileID: 11413234}
+  - 61: {fileID: 6195426}
   m_Layer: 0
   m_Name: Jello
   m_TagString: Untagged
@@ -87,19 +87,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 444212}
   m_RootOrder: 0
---- !u!58 &5801158
-CircleCollider2D:
+--- !u!61 &6195426
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 196656}
   m_Enabled: 1
-  m_Material: {fileID: 6200000, guid: 8b997f31b7e95449b829a6f384617e83, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: .800000012}
   serializedVersion: 2
-  m_Radius: 1.39999998
+  m_Size: {x: 3.20000005, y: 1.60000002}
 --- !u!114 &11413234
 MonoBehaviour:
   m_ObjectHideFlags: 1
